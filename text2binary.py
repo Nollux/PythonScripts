@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 text_input = list(input("Enter text: "))
 
 unicode = []
