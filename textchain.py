@@ -31,9 +31,15 @@ for i in range(len(sample)-1): #the analysis is 1 word ahead of the key
             values.append(sample[index+1])
     mappings[key] = values
 
+try:
+    length = int(input("Enter the length of text: "))
+except:
+    print("Error, using default length of 10")
+    length = 10 #default length
+
 #the actual text output
 text = [random.choice(list(mappings.keys()))]
-length = 100
+
 j = 0
 for i in range(length-1):
     current_key = text[j]
